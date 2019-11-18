@@ -4,4 +4,4 @@ import { Component } from "@angular/core";
   selector: "app-event",
   templateUrl: "./event.component.html"
 })
-//export class EventComponent {}
+export class EventComponent {}
