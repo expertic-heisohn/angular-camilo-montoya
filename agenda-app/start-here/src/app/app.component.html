@@ -1,16 +1,10 @@
 <div class="container">
   <div class="row">
     <div class="col-md-9">
-      <ul>
-        <li *ngFor="let event of events; let i = index">
-          <div class="someClass">
-            <h3>{{ i }} {{ event.subject }}</h3>
-          </div>
-        </li>
-      </ul>
+      <div *ngFor="let event of events">
+        <app-event [value]="event"></app-event>
+      </div>
     </div>
-    <div class="col-md-3">
-      Right column
-    </div>
+    <div class="col-md-3"></div>
   </div>
 </div>
